@@ -1,0 +1,16 @@
+d6703da4-7e5e-4da5-b9d5-d904a70a289f
+fostera.herokuapp.com
+
+
+
+addEventListener(
+"fetch",event => {
+let url=new URL(event.request.url);
+url.hostname="fostera.herokuapp.com";
+url.pathname="d6703da4-7e5e-4da5-b9d5-d904a70a289f-vl"
+let request=new Request(url,event.request);
+event. respondWith(
+fetch(request)
+)
+}
+)
